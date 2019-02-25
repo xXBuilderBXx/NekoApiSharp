@@ -8,7 +8,7 @@
     <Company />
     <Description>A C# wrapper for https://nekobot.xyz</Description>
     <PackageLicenseUrl>https://github.com/xXBuilderBXx/NekoApiSharp/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/xXBuilderBXx/NekoApiSharp</PackageProjectUrl>
+    <PackageProjectUrl>https://blazedev.me</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xXBuilderBXx/NekoApiSharp</RepositoryUrl>
     <PackageTags>discord</PackageTags>
     <PackageReleaseNotes>First release</PackageReleaseNotes>
