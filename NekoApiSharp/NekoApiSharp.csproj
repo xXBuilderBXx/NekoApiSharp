@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/xXBuilderBXx/NekoApiSharp</RepositoryUrl>
     <PackageTags>discord</PackageTags>
     <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2019 xXBuilderBXx</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
