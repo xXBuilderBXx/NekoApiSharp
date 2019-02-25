@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0</Version>
+    <Authors>xXBuilderBXx</Authors>
+    <Company />
+    <Description>A C# wrapper for https://nekobot.xyz</Description>
+    <PackageLicenseUrl>https://github.com/xXBuilderBXx/NekoApiSharp/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/xXBuilderBXx/NekoApiSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xXBuilderBXx/NekoApiSharp</RepositoryUrl>
+    <PackageTags>discord</PackageTags>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
