@@ -108,6 +108,11 @@ namespace NekoApiSharp
             return await Client.SendRequest($"imagegen?type=magik&image={imageurl}&intensity={intensity}");
         }
 
+        public async Task<Request> Trash(string imageurl)
+        {
+            return await Client.SendRequest("imagegen?type=trash&url=" + imageurl);
+        }
+
         public enum DDLC_Character
         {
             Monkia, Yuri, Natsuki, Sayori
