@@ -115,7 +115,7 @@ namespace NekoApiSharp
 
         public enum DDLC_Character
         {
-            Monkia, Yuri, Natsuki, Sayori
+            Monika, Yuri, Natsuki, Sayori
         }
 
         public enum DDLC_Background
