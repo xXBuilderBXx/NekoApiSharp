@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <Authors>Builderb</Authors>
     <Company>Fluxpoint Development</Company>
     <Description>A C# wrapper for https://nekobot.xyz</Description>
@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://fluxpoint.dev</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xXBuilderBXx/NekoApiSharp</RepositoryUrl>
     <PackageTags>discord</PackageTags>
-    <PackageReleaseNotes>Fixed ddlc monika</PackageReleaseNotes>
+    <PackageReleaseNotes>Added authorization token as optional</PackageReleaseNotes>
     <Copyright>Copyright 2019 Fluxpoint Development</Copyright>
   </PropertyGroup>
 

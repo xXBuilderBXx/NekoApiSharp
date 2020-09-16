@@ -7,14 +7,16 @@ namespace NekoApiSharp
 {
     public class NekoApiClient
     {
-        public NekoApiClient(string botname)
+        public NekoApiClient(string botname, string token = "")
         {
             Client.DefaultRequestHeaders.Add("User-Agent", $"NekoApiSharp {Version} | {botname}");
+            if (token != "")
+                Client.DefaultRequestHeaders.Add("Authorization", token);
             ImageGen = new ImageGenEndpoints(this);
             Image = new ImageEndpoints(this);
         }
         private readonly HttpClient Client = new HttpClient();
-        public readonly string Version = "1.0";
+        public readonly string Version = "1.2.2";
         public LogType LogType = LogType.Info;
 
         public ImageGenEndpoints ImageGen;
