@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace NekoApiSharp
 {
@@ -13,105 +10,85 @@ namespace NekoApiSharp
         }
         private readonly NekoApiClient Client;
 
-        public async Task<Request> Threats(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=threats&url=" + imageurl);
-        }
+        public Task<Request> Threats(string imageurl)
+        => Client.SendRequest("imagegen?type=threats&url=" + imageurl);
+        
 
-        public async Task<Request> Baguette(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=baguette&url=" + imageurl);
-        }
+        public Task<Request> Baguette(string imageurl)
+            =>  Client.SendRequest("imagegen?type=baguette&url=" + imageurl);
+        
 
-        public async Task<Request> Clyde(string text)
-        {
-            return await Client.SendRequest("imagegen?type=clyde&text=" + text);
-        }
+        public Task<Request> Clyde(string text)
+            =>  Client.SendRequest("imagegen?type=clyde&text=" + text);
+        
 
-        public async Task<Request> Ship(string image1url, string image2url)
-        {
-            return await Client.SendRequest($"imagegen?type=ship&user1={image1url}&user2={image2url}");
-        }
+        public Task<Request> Ship(string image1url, string image2url)
+            =>  Client.SendRequest($"imagegen?type=ship&user1={image1url}&user2={image2url}");
+        
 
-        public async Task<Request> Captcha(string name, string imageurl)
-        {
-            return await Client.SendRequest($"imagegen?type=captcha&username={name}&url={imageurl}");
-        }
+        public Task<Request> Captcha(string name, string imageurl)
+        => Client.SendRequest($"imagegen?type=captcha&username={name}&url={imageurl}");
+        
 
-        public async Task<Request> WhoWouldWin(string image1url, string image2url)
-        {
-            return await Client.SendRequest($"imagegen?type=whowouldwin&user1={image1url}&user2={image2url}");
-        }
+        public Task<Request> WhoWouldWin(string image1url, string image2url)
+        => Client.SendRequest($"imagegen?type=whowouldwin&user1={image1url}&user2={image2url}");
+        
 
-        public async Task<Request> ChangeMyMind(string text)
-        {
-            return await Client.SendRequest("imagegen?type=changemymind&text=" + text);
-        }
+        public Task<Request> ChangeMyMind(string text)
+        => Client.SendRequest("imagegen?type=changemymind&text=" + text);
+        
 
-        public async Task<Request> DDLC(DDLC_Character character, DDLC_Background background, string text)
-        {
-            return await Client.SendRequest($"imagegen?type=ddlc&character={character.ToString().ToLower()}&background={background.ToString().ToLower()}&body=1&face=a&text={text}");
-        }
+        public Task<Request> DDLC(DDLC_Character character, DDLC_Background background, string text)
+        => Client.SendRequest($"imagegen?type=ddlc&character={character.ToString().ToLower()}&background={background.ToString().ToLower()}&body=1&face=a&text={text}");
+        
 
-        public async Task<Request> Lolice(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=lolice&url=" + imageurl);
-        }
+        public Task<Request> Lolice(string imageurl)
+        => Client.SendRequest("imagegen?type=lolice&url=" + imageurl);
+        
 
-        public async Task<Request> Kanna(string text)
-        {
-            return await Client.SendRequest("imagegen?type=kannagen&text=" + text);
-        }
+        public Task<Request> Kanna(string text)
+        => Client.SendRequest("imagegen?type=kannagen&text=" + text);
+        
 
-        public async Task<Request> IphoneX(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=iphonex&url=" + imageurl);
-        }
+        public Task<Request> IphoneX(string imageurl)
+        => Client.SendRequest("imagegen?type=iphonex&url=" + imageurl);
+        
 
-        public async Task<Request> Awooify(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=awooify&url=" + imageurl);
-        }
+        public Task<Request> Awooify(string imageurl)
+        => Client.SendRequest("imagegen?type=awooify&url=" + imageurl);
+        
 
-        public async Task<Request> Trap(string authorname, string targetname, string targetimageurl)
-        {
-            return await Client.SendRequest($"imagegen?type=trap&image={targetimageurl}&name={targetname}&author={authorname}");
-        }
+        public Task<Request> Trap(string authorname, string targetname, string targetimageurl)
+        => Client.SendRequest($"imagegen?type=trap&image={targetimageurl}&name={targetname}&author={authorname}");
+        
 
-        public async Task<Request> TrumpTweet(string text)
-        {
-            return await Client.SendRequest("imagegen?type=trumptweet&text=" + text);
-        }
+        public Task<Request> TrumpTweet(string text)
+        => Client.SendRequest("imagegen?type=trumptweet&text=" + text);
+        
 
-        public async Task<Request> Tweet(string username, string text)
-        {
-            return await Client.SendRequest($"imagegen?type=tweet&username={username}&text={text}");
-        }
+        public Task<Request> Tweet(string username, string text)
+        => Client.SendRequest($"imagegen?type=tweet&username={username}&text={text}");
+        
 
-        public async Task<Request> Deepfry(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=deepfry&image=" + imageurl);
-        }
+        public Task<Request> Deepfry(string imageurl)
+            =>  Client.SendRequest("imagegen?type=deepfry&image=" + imageurl);
+        
 
-        public async Task<Request> Blurpify(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=blurpify&image=" + imageurl);
-        }
+        public Task<Request> Blurpify(string imageurl)
+            =>  Client.SendRequest("imagegen?type=blurpify&image=" + imageurl);
+        
 
-        public async Task<Request> PornhubComment(string username, string imageurl, string text)
-        {
-            return await Client.SendRequest($"imagegen?type=trap&image={imageurl}&username={username}&text={text}");
-        }
+        public Task<Request> PornhubComment(string username, string imageurl, string text)
+            =>  Client.SendRequest($"imagegen?type=trap&image={imageurl}&username={username}&text={text}");
+        
 
-        public async Task<Request> Magik(string imageurl, int intensity)
-        {
-            return await Client.SendRequest($"imagegen?type=magik&image={imageurl}&intensity={intensity}");
-        }
+        public Task<Request> Magik(string imageurl, int intensity)
+            =>  Client.SendRequest($"imagegen?type=magik&image={imageurl}&intensity={intensity}");
+        
 
-        public async Task<Request> Trash(string imageurl)
-        {
-            return await Client.SendRequest("imagegen?type=trash&url=" + imageurl);
-        }
+        public Task<Request> Trash(string imageurl)
+            =>  Client.SendRequest("imagegen?type=trash&url=" + imageurl);
+        
 
         public enum DDLC_Character
         {

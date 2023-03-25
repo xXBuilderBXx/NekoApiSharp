@@ -1,28 +1,17 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NekoApiSharp
+﻿namespace NekoApiSharp
 {
     public class Request
     {
-        public Request(JObject content, bool success, string error, int code)
+        public Request(string error = "", int code = 200)
         {
-            if (content != null)
-            {
-                RawData = content;
-                if (content.ContainsKey("message"))
-                    ImageUrl = (string)content["message"];
-            }
-            Success = success;
-            ErrorCode = code;
-            ErrorMessage = error;
+            if (code == 200)
+                Success = true;
+            Code = code;
+            Error = error;
         }
-        public readonly string ImageUrl;
-        public readonly bool Success;
-        public readonly int ErrorCode;
-        public readonly string ErrorMessage;
-        public readonly dynamic RawData;
+        public string ImageUrl { get; internal set; }
+        public bool Success { get; internal set; }
+        public int Code { get; private set; }
+        public string Error { get; private set; }
     }
 }

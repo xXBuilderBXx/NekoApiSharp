@@ -3,20 +3,21 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.2.2</Version>
+    <Version>1.3.4</Version>
     <Authors>Builderb</Authors>
     <Company>Fluxpoint Development</Company>
     <Description>A C# wrapper for https://nekobot.xyz</Description>
     <PackageLicenseUrl>https://github.com/xXBuilderBXx/NekoApiSharp/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://fluxpoint.dev</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xXBuilderBXx/NekoApiSharp</RepositoryUrl>
-    <PackageTags>discord</PackageTags>
+    <PackageTags>discord,bot,discordbot,discord bot</PackageTags>
     <PackageReleaseNotes>Added authorization token as optional</PackageReleaseNotes>
     <Copyright>Copyright 2019 Fluxpoint Development</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
